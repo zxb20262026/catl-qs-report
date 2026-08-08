@@ -140,6 +140,20 @@ tr:hover td { background: rgba(88,166,255,0.04); }
   display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;
 }
 
+/* 小白解读卡片 */
+.beginner-note {
+  margin-top: 12px; padding: 10px 14px;
+  background: rgba(188,140,255,0.06);
+  border-left: 3px solid var(--purple);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px; color: #b0b8c4; line-height: 1.7;
+}
+.beginner-note .bn-title {
+  font-weight: 700; color: var(--purple); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+}
+.beginner-note strong { color: #d0d7e3; }
+
 /* 反共识分析 */
 .consensus-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
@@ -236,6 +250,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
             <tr><td>预测EPS</td><td>20.76</td></tr>
             <tr><td>PEG=1合理价</td><td>¥687</td></tr>
           </table>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：PEG估值</div>
+            PEG是<strong>PE÷盈利增速</strong>，衡量"花多少钱买增长"。PEG&lt;1=便宜，&gt;1.5=偏贵。宁德PEG=<strong>0.64</strong>，属于<strong>显著低估区间</strong>。通俗理解：你花21倍PE买入一只每年盈利增长33%的股票，两年后PE自然降到12倍——<strong>增长会帮你把高PE"消化"掉</strong>。PEG=1的合理价约<strong>¥687</strong>，当前¥388有较大安全边际。
+          </div>
         </div>
         <div class="card">
           <h3>一致预期EPS轨迹</h3>
@@ -271,6 +289,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
           <td>24.8%</td>
         </tr>
           </table>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：EPS轨迹</div>
+            EPS是<strong>每股收益</strong>，公司每赚1股能分多少钱。宁德2025年实际赚了<strong>每股¥15.61</strong>，分析师预测2026年将达<strong>¥20.76（+33%）</strong>。2028年预计¥31.04，两年翻倍。这意味着<strong>即便股价不涨，PE也会从24倍自然降到12倍</strong>——这就是盈利增长消化估值的力量。
+          </div>
         </div>
         <div class="card">
           <h3>分析师评级汇总</h3>
@@ -286,6 +308,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
             <tr><td>最低目标价</td><td>¥—</td></tr>
             <tr><td>综合评级</td><td><strong>买入 4.81</strong></td></tr>
           </table>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：分析师评级</div>
+            31家券商覆盖宁德，25家<strong>买入</strong>+6家<strong>增持</strong>=100%看多，0家看空。综合评分4.81分（满分5分），属于全市场<strong>最强共识</strong>之一。这既是<strong>信心的体现</strong>（机构一致看好），也是<strong>风险信号</strong>——当所有人都看多时，任何低于预期的消息都可能导致剧烈调整。凯恩斯说过：<strong>市场共识往往是错的</strong>。
+          </div>
         </div>
       </div>
     </div>
@@ -307,6 +333,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
             <tr><td>每股净资产</td><td>81.99</td></tr>
             <tr><td>每股经营现金流</td><td>13.02</td></tr>
           </table>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：财务指标</div>
+            <strong>ROE 12.1%</strong>=每投入100元净资产赚12元，制造业中优秀水平。<strong>毛利率23.9%</strong>=每卖100元产品毛利24元，电池行业因原材料占比高毛利率偏低属正常。<strong>负债率63.7%</strong>=每100元资产中有64元借来的，重资产制造合理范围（&lt;70%即安全）。<strong>营收增速54.8%</strong>=今年比去年同期多卖了一半，高增长确定性强。每股经营现金流13元&gt;每股收益9.5元，说明<strong>赚的是真金白银而非账面利润</strong>。
+          </div>
         </div>
         <div class="card">
           <h3>财务健康快速评分</h3>
@@ -375,6 +405,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
         <div class="card">
           <h3>一票否决检查</h3>
           <div class="munger-verdict"><span class="tag tag-green" style="margin:3px">✅ 通过: 毛利率持续下滑</span><span class="tag tag-green" style="margin:3px">✅ 通过: ROE < 10%</span><span class="tag tag-green" style="margin:3px">✅ 通过: 负债率 > 80%</span><span class="tag tag-yellow" style="margin:3px">⚠️ 待验证: 自由现金流为负</span><span class="tag tag-green" style="margin:3px">✅ 无异常: 大股东减持</span><span class="tag tag-green" style="margin:3px">✅ 无异常: 审计非标意见</span></div>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：芒格模型</div>
+            查理·芒格是巴菲特合伙人，他的核心投资哲学：<strong>以合理价格买好公司，比以便宜价格买普通公司强百倍</strong>。5维模型从五个角度打分：安全边际（便宜吗？8分）、护城河（难复制吗？9分·全球市占率37%）、管理层（靠谱吗？7分·创始人技术背景）、行业前景（有未来吗？8分·新能源大势）、估值合理（价格好吗？7分·PEG偏低）。<strong>综合7.8分属于优秀</strong>。一票否决清单全部通过，无致命缺陷。芒格对制造业有偏见，但CATL的规模壁垒已构成实质性护城河。
+          </div>
           <div style="margin-top:16px;font-size:12px;color:var(--text-dim)">
             <p><strong>芒格方法论：</strong>不做精确的错误，只做大致正确的判断。先过一票否决清单，再看五维综合评分。</p>
             <p style="margin-top:8px">CATL属于制造业，芒格对制造业持谨慎态度（"最好的生意是躺赚的生意"），但新能源赛道有结构性增长。</p>
@@ -386,6 +420,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
     <div class="section">
       <div class="section-title">💡 反共识投资分析 <span class="badge">QuantiSkills: keynes-contrarian-investment</span></div>
       <div class="alert alert-yellow">⚠️ <strong>分析师过度乐观</strong>：买入评级占比 81%，一致性过强。凯恩斯警告：市场共识往往是错的。需警惕预期兑现风险。</div>
+      <div class="beginner-note" style="margin:12px 0">
+        <div class="bn-title">📖 小白解读：反共识投资</div>
+        凯恩斯说：<strong>市场保持非理性的时间，可能比你保持偿付能力的时间更长</strong>。反共识投资的精髓不是"跟市场对着干"，而是<strong>当市场一致性过强时保持警惕</strong>。当前分析师81%看多，这个比例过高——意味着一旦出现不及预期的消息，股价可能剧烈波动。但基本面（PEG 0.64、ROE 22%、全球龙头）支撑长期持有逻辑。核心策略：<strong>相信基本面，警惕一致性，留足安全边际</strong>。
+      </div>
       <div class="card-grid">
         <div class="card">
           <h4 style="color:var(--red)">🐂 看多</h4>
@@ -488,6 +526,11 @@ tr:hover td { background: rgba(88,166,255,0.04); }
         </div>
       </div>
       
+      <div class="beginner-note" style="margin:12px 0">
+        <div class="bn-title">📖 小白解读：技术指标速查</div>
+        <strong>均线(MA)</strong>=一段时间平均价，反映趋势方向。当前MA5/MA20/MA60分别=¥394/¥384/¥394，股价¥388跌破短期和长期均线，短期偏弱但MA20有支撑。<strong>MACD</strong>=趋势跟踪指标，正值且扩大=上涨动能增强，当前DIF 2.77&gt;DEA 1.41=金叉状态。<strong>RSI 49.9</strong>=50附近徘徊，不超买不超卖，多空均衡。<strong>布林带</strong>=统计波动范围，上轨¥412/下轨¥355，价格在中轨附近属正常波动。<strong>ATR 14.0</strong>=日均振幅约14元，短线波动较大需注意仓位管理。
+      </div>
+      
       <div style="margin-top:12px" class="chart-container">
         
     <svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
@@ -580,6 +623,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
             <p>正值 = A股溢价（A比H贵）</p>
             <p>CATL历史AH溢价中枢约 -20%~-40%，当前折价表现符合历史规律。</p>
           </div>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：估值水位</div>
+            PE 21倍，52周价格在346-469区间，当前¥388处于<strong>中等偏低位置</strong>。AH溢价-33%意味着A股比港股<strong>便宜33%</strong>，这在A股市场极为罕见——通常A股比港股贵。折价原因主要是港股流动性更好+外资定价权更强。对A股持有者来说，AH折价相当于<strong>额外安全垫</strong>。
+          </div>
         </div>
       </div>
     </div>
@@ -596,6 +643,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
           <h3>主要指数</h3>
           <table><tr><th>指数</th><th>点位</th><th>涨跌</th></tr><tr><td>上证指数</td><td>3940.04</td><td class="cell-up">+1.02%</td></tr><tr><td>沪深300</td><td>4694.44</td><td class="cell-up">+0.93%</td></tr><tr><td>创业板指</td><td>3563.12</td><td class="cell-up">+1.35%</td></tr><tr><td>科创50</td><td>1744.02</td><td class="cell-up">+2.51%</td></tr></table>
         </div>
+      </div>
+      <div class="beginner-note">
+        <div class="bn-title">📖 小白解读：市场状态</div>
+        当前市场处于<strong>温和上行</strong>阶段：四大指数全线上涨（上证+1%、沪深300+0.9%、创业板+1.4%、科创50+2.5%）。这种环境下，<strong>成长股（如宁德）通常表现优于价值股</strong>。20日涨幅+8%说明短期动能强劲，但RSI 50附近不算过热，<strong>趋势健康</strong>。注意科创50涨2.5%领跑，说明<strong>科技/高端制造风格占优</strong>，利好CATL。
       </div>
     </div>
 
@@ -614,6 +665,10 @@ tr:hover td { background: rgba(88,166,255,0.04); }
             <strong>核心观点：</strong>CATL作为全球动力电池龙头，护城河极深。
             PEG估值处于低估区间，长期持有逻辑未变。
             关注碳酸锂价格趋势和储能业务进展作为核心催化剂。
+          </div>
+          <div class="beginner-note">
+            <div class="bn-title">📖 小白解读：操作建议怎么用</div>
+            这张卡的逻辑是<strong>多维度交叉验证</strong>：估值说"便宜"（PEG 0.64）+趋势说"偏弱"（跌破MA60 1.4%）=<strong>好公司遇到短期调整</strong>。对长期持有者而言，这种组合往往是<strong>加仓窗口</strong>而非减仓信号。锚定参考给出不同PE对应的合理价：保守¥311、中性¥415、乐观¥519、PEG中性锚¥687。当前¥388低于中性估值，<strong>有安全边际</strong>。
           </div>
         </div>
         <div class="card">
