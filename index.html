@@ -41,6 +41,12 @@ body {
 
 .container { max-width: 1400px; margin: 0 auto; padding: 20px 24px; }
 
+/* Nav bar (跨看板导航) */
+.nav-bar{display:flex;justify-content:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;position:relative;z-index:2}
+.nav-btn{display:inline-block;padding:6px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;color:var(--text-dim);text-decoration:none;font-size:12px;transition:all 0.2s}
+.nav-btn:hover{color:var(--accent);border-color:var(--accent)}
+.nav-btn.active{color:var(--accent);border-color:var(--accent);background:rgba(88,166,255,0.08)}
+
 /* KPI Row */
 .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
 .kpi { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
@@ -155,6 +161,16 @@ tr:hover td { background: rgba(88,166,255,0.04); }
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <a class="nav-btn" href="https://zxb20262026.github.io/300750/">🔋 宁德</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/600900/">💧 长电</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/00700/">🐧 腾讯</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/688981/">🔬 中芯</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/603259/">💊 药明</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/sh300-etf-dashboard/">🎯 ETF</a>
+  <a class="nav-btn" href="https://zxb20262026.github.io/vibe-dashboard/">🧬 港大</a>
+  <a class="nav-btn active" href="https://zxb20262026.github.io/catl-qs-report/">🧬 QS</a>
+</div>
 
 <div class="header">
   <div>
